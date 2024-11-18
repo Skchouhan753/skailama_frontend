@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-section {
+    background-color: #f5f6fa;
+    overflow: hidden;
+    /* padding:10px; */
+  }
+  
+  .content-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-column {
+    flex: 2;
+    max-width: 100%;
+  }
+  
+  .hero-content {
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .hero-image-container {
+    position: relative;
+    min-height: 820px;
+    padding: 40px 20px;
+  }
+  
+  .hero-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-text-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .logo {
+    width: 200px;
+    max-width: 100%;
+  }
+  
+  .hero-title {
+    margin-top: 20px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  
+  .hero-subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .login-column {
+    flex: 1;
+    max-width: 100%;
+    margin-right: 20px;
+  }
+  
+  .login-form-wrapper {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .login-logo {
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .login-title {
+    color: #7e22ce;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  .login-input {
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 10px;
+    color: #a7a7a7;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+  }
+  
+  .login-options {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  
+  .remember-me-wrapper {
+    display: flex;
+    gap: 5px;
+    color: #3c3c3c;
+  }
+  
+  .forgot-password {
+    color: #085fce;
+  }
+  
+  .login-button {
+    border-radius: 8px;
+    background-color: #7e22ce;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .or-divider {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .social-login-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .social-login-button {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .google-login {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+    gap: 10px;
+    color: #3c3c3c;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .google-icon {
+    width: 20px;
+  }
+  
+  .signup-prompt {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+    font-size: 14px;
+    justify-content: center;
+  }
+  
+  .signup-link {
+    color: #005ad5;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  
+  @media (max-width: 768px) {
+      .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .hero-image-container {
+        min-height: 400px;
+        padding: 20px;
+      }
+    
+      .hero-title {
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: 15px;
+      }
+    
+      .hero-subtitle {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    
+      .login-title {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    
+      .login-input,
+      .login-button {
+        font-size: 14px;
+        padding: 12px;
+      }
+    
+      .google-login {
+        font-size: 12px;
+        padding: 10px;
+      }
+    }
+    
+    /* Mobile Styles */
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    
+      .hero-subtitle {
+        font-size: 14px;
+      }
+    
+      .login-title {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    
+      .login-input,
+      .login-button {
+        font-size: 12px;
+        padding: 10px;
+      }
+    
+      .social-login-button {
+        width: 30px;
+        height: 30px;
+      }
+    
+      .google-login {
+        font-size: 10px;
+        gap: 5px;
+        padding: 8px;
+      }
+    
+      .signup-prompt {
+        font-size: 12px;
+      }
+    }
